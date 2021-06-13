@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ShowUserDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="Name : "
+                    android:textColor="@color/purple"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <TextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/purple"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="Email : "
+                    android:textColor="@color/purple"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/emailTxt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/purple"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                    app:layout_constraintStart_toStartOf="@+id/nameTxt"
+                    app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="Gender : "
+                    android:textColor="@color/purple"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/genderTxt"
+                    app:layout_constraintStart_toStartOf="@+id/textView6"
+                    app:layout_constraintTop_toTopOf="@+id/genderTxt" />
+
+                <TextView
+                    android:id="@+id/genderTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/purple"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/emailTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="Balance : "
+                    android:textColor="@color/purple"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/balanceTxt"
+                    app:layout_constraintStart_toStartOf="@+id/textView8"
+                    app:layout_constraintTop_toTopOf="@+id/balanceTxt" />
+
+                <TextView
+                    android:id="@+id/balanceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="TextView"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/purple"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/genderTxt"
+                    app:layout_constraintTop_toBottomOf="@+id/genderTxt" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@color/purple"
+                    android:fontFamily="@font/source_sans_pro_bold"
+                    android:text="Send Money"
+                    android:elevation="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:onClick="goToSendMoney"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/balanceTxt"
+                    app:layout_constraintStart_toStartOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

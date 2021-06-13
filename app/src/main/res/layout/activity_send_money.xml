@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendMoney"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Send Money"
+        android:textColor="@color/purple"
+        android:textSize="50sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="From"
+        app:hintTextColor="@color/black"
+        android:layout_marginVertical="30dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:id="@+id/from_person_name"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:textColor="@color/purple"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+         android:hint="To"
+        app:hintTextColor="@color/black"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/to_person_name"
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Amount To Be Sent"
+        app:hintTextColor="@color/black"
+        android:layout_marginVertical="30dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:fontFamily="@font/source_sans_pro_bold"
+            android:id="@+id/amount_to_be_send"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:textColor="@color/purple"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/send_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:fontFamily="@font/bungee"
+        android:background="@color/purple"
+        android:textColor="@color/white"
+        android:elevation="5dp"
+        android:textSize="24sp"
+        />
+
+
+
+
+</LinearLayout>
